@@ -75,12 +75,12 @@
       
   
 
-
-<div class="container theme-showcase">
-    <h1>Calendar</h1>
-  <div id="holder" class="row" ></div>
+<div class="col-lg-8 col-md-8">
+<div class="container theme-showcase" style="margin-left: .5rem;"">
+    <h1>Our Schedule</h1>
+  <div id="holder" class="container-fluid" ></div>
   </div>
-  
+</div>
   
   <script type="text/tmpl" id="tmpl">
     {{ 
@@ -247,8 +247,6 @@
     });
   
   
-  //quicktmpl is a simple template language I threw together a while ago; it is not remotely secure to xss and probably has plenty of bugs that I haven't considered, but it basically works
-  //the design is a function I read in a blog post by John Resig (http://ejohn.org/blog/javascript-micro-templating/) and it is intended to be loosely translateable to a more comprehensive template language like mustache easily
   $.extend({
       quicktmpl: function (template) {return new Function("obj","var p=[],print=function(){p.push.apply(p,arguments);};with(obj){p.push('"+template.replace(/[\r\t\n]/g," ").split("{{").join("\t").replace(/((^|\}\})[^\t]*)'/g,"$1\r").replace(/\t:(.*?)\}\}/g,"',$1,'").split("\t").join("');").split("}}").join("p.push('").split("\r").join("\\'")+"');}return p.join('');")}
   });
@@ -477,7 +475,7 @@
       c1 = 3329,
       h, 
       m,
-      names = ['Competition', 'Results for competition', 'Judges day'],
+      names = ['Competition','Try outs' , 'Results for competition', 'Judges day'],
       slipsum = ["Scheduled event: Open to all"];
   
     for(i = 0; i < 500; i++) {
