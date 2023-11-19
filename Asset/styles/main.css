@@ -268,3 +268,8 @@ body {
   background-color: skyblue; /* For browsers that do not support gradients */
   background: radial-gradient(white,gray);
 }
+
+.img-responsive{
+  min-width: 250px;
+  min-height: 250px;
+}
