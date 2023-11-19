@@ -1,5 +1,5 @@
 .home{
-    margin-top: 5rem;
+    margin-top: 6rem;
 }
 
 body {
@@ -162,4 +162,8 @@ body {
     box-shadow: 1px 1px 2px 0px rgba(46,61,73,0.15);
     border-radius: 4px;
     transition: all 0.3s ease;
+  }
+
+  .navbar{
+    background-color: #000;
   }
