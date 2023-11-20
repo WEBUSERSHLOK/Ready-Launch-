@@ -270,8 +270,8 @@ body {
 }
 
 .img-responsive{
-  min-width: 250px;
+  min-width: 350px;
   min-height: 250px;
-  max-width: 250px;
+  max-width: 350px;
   max-height: 250px;
 }
