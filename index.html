@@ -64,7 +64,7 @@
                             <input type="password" placeholder="Password" class="form-control input-sm" name="password" id="Password1" />
                         </div>
                         <div class="col-sm-12">
-                            <button type="submit" class="btn btn-success btn-sm">Sign in</button>
+                            <button type="submit" class="btn btn-success btn-sm" onclick="Login()">Sign in</button>
                         </div>
                     </div>
                 </div>
@@ -189,6 +189,9 @@
           } // End if
         });
       })
+            function Login() {
+                alert("You are now logged in");
+          }
       </script>
       
       </body>
