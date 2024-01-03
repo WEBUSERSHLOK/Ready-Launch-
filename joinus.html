@@ -163,41 +163,41 @@
                 <button class="btn btn-primary" type="submit" onclick="SignIn()">Join us</button>
               </form>
  
-       <div class="container-fluid">         
+   <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12>     
        <h2>My Customers</h2>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="FIND A MEMBER" title="Type in a name">
+<input type="text" id="myInput" onkeyup="mySearch()" placeholder="FIND A MEMBER" title="Type in a name">
 
 <table id="myTable">
   <tr class="header">
     <th style="width:60%;">Name</th>
-    <th style="width:40%;">Country</th>
+    <th style="width:40%;">Username</th>
   </tr>
   <tr>
     <td>Bob Kerns</td>
-    <td>USA</td>
+    <td>userbob1</td>
   </tr>
   <tr>
     <td>Finn Koch</td>
-    <td>Germany</td>
+    <td>Finnbecamemember2</td>
   </tr>
   <tr>
     <td>Hunter Samuel</td>
-    <td>USA</td>
+    <td>Samuel@9</td>
   </tr>
   <tr>
-    <td>Koniglich Essen</td>
-    <td>Germany</td>
+    <td>Smune Kinlin</td>
+    <td>Makerspacelegend</td>
   </tr>
   <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Canada</td>
+    <td>Runi Fihs</td>
+    <td>Canman</td>
   </tr>
   <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Italy</td>
+    <td>Gerald Uter</td>
+    <td>User23</td>
   </tr>
   <tr>
-    <td>North/South</td>
+    <td></td>
     <td>UK</td>
   </tr>
   <tr>
@@ -339,7 +339,7 @@
                   alert("Congrats! You will receive an approval in about a week");
                     }
                   <script>
-function myFunction() {
+function mySearch() {
   var input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("myInput");
   filter = input.value.toUpperCase();
