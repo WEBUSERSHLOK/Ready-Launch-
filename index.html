@@ -9,12 +9,13 @@
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="./Asset/styles/main.css">
+<link rel="stylesheet" href="style.css"
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" class="bg">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" class="bg" style="background-color:cyan;background-image: linear-gradient(to right,  rgb(94, 167, 94) , cyan)">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid navdiv">
           <div class="navbar-header">
@@ -74,7 +75,7 @@
         </div>
       </nav>
       
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color:cyan;background-image: linear-gradient(to right, blue , Purple)">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -120,16 +121,12 @@
           </a>
       </div>
       <div class="container">
-       <h1><strong>What is a makerspace</strong></h1>
-          <p><strong>A maker space is a collaborative workspace. Everyone can upload their ideas into the projects section. They shall upload to the specific category they are looking for. For example, if you created a nice 3d printer, the person shall upload the project in the tech section. A makerspace should include competitions to see which project stands out.</strong></p>
-      </div>
-      <div class="container">
-       <h1><strong>What is the purpose</strong></h1>
-          <p><strong>The purpose is to get new projects from users who work hard to create those projects. The competitions will allow us to see who's ideas stand out the most. A user could also be a member which allows them to access more projects and they create their own projects which goes directly to the creators.</strong></p>
-      </div>
-          <div class="container">
-            <h1><strong><a href="https://webusershlok.github.io/Ready-Launch-/project-tech.html">VISIT PROJECTS</a></strong></h1>
-          </div>
+    <h1><strong>Overview</strong></h1>
+      <h2>A maker space is a collaborative workspace. Everyone can upload their ideas into the projects section. They shall upload to the specific category they are looking for. For example, if you created a nice 3d printer, the person shall upload the project in the tech section. A makerspace should include competitions to see which project stands out. The purpose is to get new projects from users who work hard to create those projects. The competitions will allow us to see who's ideas stand out the most. A user could also be a member which allows them to access more projects and they create their own projects which goes directly to the creators.</h2>
+  
+      
+      </div>>
+        
    <div> <strong> <h2> Frequent Questions for Makerspace</strong></h2>
 
 <button class="accordion">Why can't I access more than 8 projects?</button>
@@ -190,6 +187,20 @@
             function Login() {
                 alert("You are now logged in");
           }
+          var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
       </script>
       
       </body>
