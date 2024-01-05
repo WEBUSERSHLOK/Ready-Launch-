@@ -83,7 +83,7 @@ header {
 .panel {
   padding: 0 18px;
   display: none;
-  background-color: #68ACCA;
+  background-color: white;
   overflow: hidden;
 }
 * {
@@ -120,4 +120,8 @@ header {
 
 #myUL li a:hover:not(.header) {
   background-color: #eee;
+}
+.Words {
+  color: black;
+  font-family:'Times New Roman', Times, serif ;
 }
